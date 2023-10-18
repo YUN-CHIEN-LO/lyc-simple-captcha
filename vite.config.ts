@@ -6,4 +6,10 @@ import path from "path";
 export default defineConfig({
   plugins: [vue()],
   base: "/lyc-simple-captcha-vue/",
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+    extensions: [".ts", ".tsx", ".json", ".vue", ".scss"],
+  },
 });
