@@ -3,18 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/lyc-simple-captcha-vue.umd.cjs",
-  "module": "./dist/lyc-simple-captcha-vue.js",
-  "exports": {
-    ".": {
-      "import": "./dist/lyc-simple-captcha-vue.js",
-      "require": "./dist/lyc-simple-captcha-vue.umd.cjs"
-    }
-  },
-  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "rm -rf dist && vue-tsc --emitDeclarationOnly && vite build",
